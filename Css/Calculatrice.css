@@ -1,0 +1,94 @@
+h1
+{
+	color:red;
+	text-align:center;
+}
+h4
+{
+	text-align:center;
+}
+input[type=text]
+{
+	 width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color:#000000;
+  
+}
+input[type=button]
+{
+	width:17%;
+	height:6%;
+	color:#FFFFFF;
+	border-top: 1px solid #777;
+	background:linear-gradient(#5F5F5F 0%,#404040 100%);
+	box-shadow: 0 2px 6px rgba(0,0,0, .8);
+	margin-bottom:10px;
+	cursor:default;
+	
+}
+input[type=button]:hover
+{
+	background:linear-gradient(135deg, orange, orange 60%, cyan);
+	border-top: 1px solid #9ADD75;
+	text-shadow: 0 -1px 1px #008000;
+}
+input[type=button]:active
+{
+	box-shadow: none;
+}
+legend
+{
+	color:red;
+	border:8px;
+	border-bottom-width:15px;
+	
+}
+fieldset
+{
+  background-color:#00FFFF;
+  width:600;
+  height:650;  
+  text-align:center;
+}
+#container
+{
+	font-size:32px;
+	color:#333;
+	text-shadow: 0 1px 1px rgba(0,0,0,4);
+	margin-bottom: 32px;
+}
+#Calcul,#number,input [type="button"]
+{
+	border-radius:6px;
+	width:260px;
+}
+#Calcul
+{
+	margin: 0 auto;
+	background-color:#FFFAF0;
+	border:1px solid #303030;
+	width:300px;
+	box-shadow: 0 7px 10px rgba(0,0,0, .8);
+}
+#header
+{
+	padding:10px;
+	border-top: 1px solid #777;
+	border-radius: 6px 6px 0 0;
+}
+ input#number
+ {
+	 text-align:right;
+	 background-color:#12121212;
+	 border:none;
+	 color:#CBCBCB;
+	 font-size:20px;
+	 padding:16px;
+	 border-bottom: 1px solid #777;
+	 box-shadow:10px 10px 5px #aaaaaa; 
+ }
+ 
+ 
+ 

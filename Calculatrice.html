@@ -1,0 +1,114 @@
+<DOXTYPE html!>
+<html>
+ <head>
+  <meta charset = "utf_8"/>
+  <link rel = "stylesheet" href ="Css/Calculatrice.css"/>
+ 
+  <title> Calculatrice </title>
+  
+    </head>
+	
+	  <body>
+	  <fieldset>
+	  <legend>
+	      Calculatrice 
+	 </legend>
+	 
+	  <form name ="Calculatrice"> 
+	   <div id ="container">
+         <h1> Calculatrice </h1>
+		 <div id="Calcul">
+		 <div id ="header">
+	   <input type ="text" id ="number"  autocomplete="off"  name = "affiche"disabled ></br>
+	   </div>
+	   <div id="body">
+	   
+	   
+	   <input type="button" value="sqrt" onclick="fonctpartic('sqrt')">
+	   <input type="button" value="car" onclick="fonctpartic('car')">
+	   <input type="button" value="log" onclick="fonctpartic('log')">
+	   <input type="reset" value="C" ></br>
+	   
+	   <input type="button" value="sin" onclick="fonctpartic('sin')">
+	   <input type="button" value="cos" onclick="fonctpartic('cos')">
+	   <input type="button" value="tan" onclick="fonctpartic('tan')">
+	   <input type="button" value="Exp" onclick="fonctpartic('Exp')"></br>
+	   
+	   <input type="button" value="1" onclick="allonger('1')" >
+	   <input type="button" value="2" onclick="allonger('2')" >
+	   <input type="button" value="3" onclick="allonger('3')">
+	   <input type="button" value="/" onclick="allonger('/')"></br>
+	  
+	   <input type="button" value="4" onclick="allonger('4')">
+	   <input type="button" value="5" onclick="allonger('5')">
+	   <input type="button" value="6" onclick="allonger('6')">
+	   <input type="button" value="*" onclick="allonger('*')"></br>
+	 
+	   <input type="button" value="7" onclick="allonger('7')">
+	   <input type="button" value="8" onclick="allonger('8')">
+	   <input type="button" value="9" onclick="allonger('9')">
+	   <input type="button" value="-" onclick="allonger('-')"></br>
+
+	   <input type="button" value="+" onclick="allonger('+')">
+	   <input type="button" value="0" onclick="allonger('0')">
+	   <input type="button" value="," onclick="allonger(',')">
+	   <input type="button" value="=" onclick="evaluer()">
+	   </div>
+	   </form>
+	  </fieldset>
+	   <h4> Rida Rhnizar .</h4>
+	    <script >
+		function allonger(signe)
+		{
+		window.document.Calculatrice.affiche.value=window.document.Calculatrice.affiche.value
+		+signe;
+		}
+		function evaluer()
+		{
+		  var x =0;
+		  x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = x;
+		}
+		 function fonctpartic(lafonct)
+		 {
+		  if (lafonct=="sqrt")
+		  {
+		     x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = Math.sqrt(x);
+		  }
+		  if (lafonct=="car")
+		  {
+		    x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = x*x;
+		  }
+		   if (lafonct=="log")
+		   {
+		       x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = Math.log(x);
+		  }
+		  if (lafonct=="sin")
+		  {
+		    x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = Math.sin(x);
+		  }
+		   if (lafonct=="cos")
+		  {
+		    x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = Math.cos(x);
+		  }
+		  if(lafonct=="tan")
+		  {
+		    x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = Math.tan(x);
+		  }
+		  if(lafonct=="Exp")
+		  {
+		     x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = Math.exp(x);
+		  }
+		  }
+		</script>
+	</body>
+	
+  </html>	
+  
