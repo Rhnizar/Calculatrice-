@@ -57,57 +57,10 @@
 	   </form>
 	  </fieldset>
 	   <h4> Rida Rhnizar .</h4>
-	    <script >
-		function allonger(signe)
-		{
-		window.document.Calculatrice.affiche.value=window.document.Calculatrice.affiche.value
-		+signe;
-		}
-		function evaluer()
-		{
-		  var x =0;
-		  x = eval(window.document.Calculatrice.affiche.value);
-		  window.document.Calculatrice.affiche.value = x;
-		}
-		 function fonctpartic(lafonct)
-		 {
-		  if (lafonct=="sqrt")
-		  {
-		     x = eval(window.document.Calculatrice.affiche.value);
-		  window.document.Calculatrice.affiche.value = Math.sqrt(x);
-		  }
-		  if (lafonct=="car")
-		  {
-		    x = eval(window.document.Calculatrice.affiche.value);
-		  window.document.Calculatrice.affiche.value = x*x;
-		  }
-		   if (lafonct=="log")
-		   {
-		       x = eval(window.document.Calculatrice.affiche.value);
-		  window.document.Calculatrice.affiche.value = Math.log(x);
-		  }
-		  if (lafonct=="sin")
-		  {
-		    x = eval(window.document.Calculatrice.affiche.value);
-		  window.document.Calculatrice.affiche.value = Math.sin(x);
-		  }
-		   if (lafonct=="cos")
-		  {
-		    x = eval(window.document.Calculatrice.affiche.value);
-		  window.document.Calculatrice.affiche.value = Math.cos(x);
-		  }
-		  if(lafonct=="tan")
-		  {
-		    x = eval(window.document.Calculatrice.affiche.value);
-		  window.document.Calculatrice.affiche.value = Math.tan(x);
-		  }
-		  if(lafonct=="Exp")
-		  {
-		     x = eval(window.document.Calculatrice.affiche.value);
-		  window.document.Calculatrice.affiche.value = Math.exp(x);
-		  }
-		  }
-		</script>
+	   <script src ="calcul.js"></script>
+	    
+		
+		
 	</body>
 	
   </html>	
