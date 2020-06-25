@@ -89,6 +89,11 @@ fieldset
 	 border-bottom: 1px solid #777;
 	 box-shadow:10px 10px 5px #aaaaaa; 
  }
- 
+ img
+ {
+	 float:left;
+	 width:50%;
+	 height:50%;
+ }
  
  
