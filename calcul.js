@@ -46,4 +46,11 @@ function allonger(signe)
 		     x = eval(window.document.Calculatrice.affiche.value);
 		  window.document.Calculatrice.affiche.value = Math.exp(x);
 		  }
+		  if(lafonct=="Pi")
+		  {
+			 var y=3.14;
+		     x = eval(window.document.Calculatrice.affiche.value);
+		  window.document.Calculatrice.affiche.value = x*y;
 		  }
+		  }
+		  
